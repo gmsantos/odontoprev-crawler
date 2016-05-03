@@ -1,0 +1,15 @@
+{
+    "name": "gmsantos/odontoprev-crawler",
+    "description": "A crawler to get odontoprev dentists data",
+    "type": "project",
+    "require": {
+        "fabpot/goutte": "^3.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "gmsantos",
+            "email": "gabriel.ms1@hotmail.com"
+        }
+    ]
+}
