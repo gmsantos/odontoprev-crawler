@@ -18,17 +18,18 @@ $crawler = $client->request('GET', $searchUrl);
 
 $data = [];
 
-$crawler->filter('hr + table > font[color*="blue"]')->each(function ($dentists) use ($data) {
+$crawler->filter('hr + table')->each(function ($dentists) use ($data) {
     foreach ($dentists as $dentist) {
         $elements = $dentist->getElementsByTagName('td');
 
-        foreach ($elements as $element) {
-            echo $element->nodeValue . PHP_EOL;
+        if (false === strpos($elements[3]->nodeValue, 'Especialidade')) {
+            continue;
         }
 
-        dd('fin');
+        foreach ($elements as $element) {
+            var_dump(trim(preg_replace('/\s{2,}/', '', $element->nodeValue)));
+        }
     }
-
 });
 
 // Output $data to csv file
