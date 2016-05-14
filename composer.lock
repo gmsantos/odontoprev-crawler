@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "9147ce512ba5118b2a4a91c8f7dec487",
-    "content-hash": "276c5d8c0557f21f3b1f7f79ab85dfc3",
+    "hash": "d483a8a711c20b7df9d192d5db280ad5",
+    "content-hash": "1a752e5e31346dac1d4270d2ed93056b",
     "packages": [
         {
             "name": "fabpot/goutte",
@@ -278,7 +278,7 @@
         },
         {
             "name": "symfony/browser-kit",
-            "version": "v3.0.5",
+            "version": "v3.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/browser-kit.git",
@@ -335,7 +335,7 @@
         },
         {
             "name": "symfony/css-selector",
-            "version": "v3.0.5",
+            "version": "v3.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/css-selector.git",
@@ -388,7 +388,7 @@
         },
         {
             "name": "symfony/dom-crawler",
-            "version": "v3.0.5",
+            "version": "v3.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dom-crawler.git",
