@@ -17,4 +17,8 @@ Change the URL in your crawler file:
     // Set up search url
     $searchUrl = 'Your URL here';
     
+Run in your console
+
+    php -f crawler.php
+    
 A file named `data.csv` will be created in your project directory.
