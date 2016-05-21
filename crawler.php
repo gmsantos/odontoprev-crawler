@@ -11,9 +11,10 @@ $searchUrl = 'https://www.odontoprev.com.br/redecredenciada/buscaRedeCredenciada
 $client = new Client;
 $crawler = $client->request('GET', $searchUrl);
 
-$data = [];
-
-$data = $crawler->filter('hr + table')->each(function ($dentists) use ($data) {
+$result = $crawler->filter('hr + table')->each(function ($dentists) {
+    
+    $data = [];
+    
     foreach ($dentists as $dentist) {
         $elements = $dentist->getElementsByTagName('td');
 
@@ -42,9 +43,9 @@ $data = $crawler->filter('hr + table')->each(function ($dentists) use ($data) {
 
 $file = fopen('data.csv','w');
 
-fputcsv($file, array_keys($data[0]));
+fputcsv($file, array_keys($result[0]));
 
-foreach ($data as $row) {
+foreach ($result as $row) {
     if (! empty($row))
     {
         fputcsv($file, $row);
